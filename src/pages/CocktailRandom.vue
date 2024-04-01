@@ -57,6 +57,9 @@ getCocktailRandom();
       </div>
     </AppLayout>
   </div>
+  <div v-else>
+    <AppLayout />
+  </div>
 </template>
 
 <style lang="sass" scoped>
