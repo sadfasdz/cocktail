@@ -23,7 +23,7 @@ function removeIngredient() {
 
 <template>
   <AppLayout
-    imgUrl="/src/assets/images/bg-1.jpg"
+    imgUrl="/assets/images/bg-1.jpg"
     :goBack="removeIngredient"
     :isBackButtonVisible="!!ingredient"
   >
