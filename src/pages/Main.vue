@@ -7,6 +7,7 @@ import CocktailThumb from "../components/CocktailThumb.vue";
 import { useRootStore } from "../stores/root.js";
 import { storeToRefs } from "pinia";
 
+import bgImage from "../assets/images/bg-1.jpg";
 const rootStore = useRootStore();
 rootStore.getIngredients();
 
@@ -23,7 +24,7 @@ function removeIngredient() {
 
 <template>
   <AppLayout
-    imgUrl="src/assets/images/bg-1.jpg"
+    :imgUrl="`${bgImage}`"
     :goBack="removeIngredient"
     :isBackButtonVisible="!!ingredient"
   >
